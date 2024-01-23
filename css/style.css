@@ -5,6 +5,7 @@
     --verdeC-bg-color: #63BF7A;
     --verdeCC-bg-color: #88F2A2;
     --cinzaE-bg-color: #404040;
+    --roxo-bg-color:  rgb(128, 77, 190);
 }
 
 html{
@@ -68,15 +69,9 @@ button{
     border-radius: 12px 12px;
     background-color: #ebeaea;
     font-weight: bold;
-    box-shadow: 1px 1px 5px;
 
+    border: none;
     cursor: pointer;
-}
-button:hover{
-    transition: 2s;
-    transition-timing-function: ease-in-out;
-    background-color: var(--verde-bg-color);
-    color: #000000;
 }
 
 .hamburguer{
@@ -84,7 +79,11 @@ button:hover{
     background: none;
     cursor: pointer;
 }
+
 @media (max-width: 750px){
+    button:hover{
+        background-color: white;
+    }
     .cv{
         display: none;
     }
@@ -92,6 +91,7 @@ button:hover{
         display: block;
         margin-top: 22px;
         border: none;
+        z-index: 1;
     }
     .nav-itens{
         position: fixed;
@@ -110,9 +110,104 @@ button:hover{
         gap: 0;
         pointer-events: none;
     }
+    .nav-itens a {
+        font-size: 20px;
+        opacity: 0;
+    } 
+    .nav-itens li:nth-child(1) a{
+        transition: 0.5s 0.2s;
+    }.nav-itens li:nth-child(2) a{
+        transition: 0.5s 0.4s;
+    }.nav-itens li:nth-child(3) a{
+        transition: 0.5s 0.6s;
+    }.nav-itens li:nth-child(4) a{
+        transition: 0.5s 0.8s;
+    }
 
     #myNavMenu.active .nav-itens{
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
     }
+    #myNavMenu.active .nav-itens a{
+        opacity: 1;
+    } 
+    #myNavMenu.active .hamburguer{
+    position: fixed;
+    right: 61px;
+    }
 }
+
+main{
+    padding-top: 13em;
+    margin-left: 9em;
+    display: flex;
+}
+.inicial{
+    width: 24em;
+}
+.nome{
+    color: white;
+    background-color: var(--cinzaE-bg-color);
+    width: 8.4em;
+    padding: 2px 3px;
+    border-radius: 5px;
+}
+.dev{
+    padding-top: 4px;
+    height: 48px;
+    font-size: 30px;
+    font-weight: 800;
+}
+.dev span{
+    color: var(--verde-bg-color);
+}
+
+main button{
+    margin-top: 10px;
+}
+
+.social{
+    margin-top: 2em;
+    display: flex;
+    gap: 2.5em;
+}
+.social button{
+    font-size: 1.2em;
+    border-radius: 30px;
+    box-shadow: 1px 1px 3px;
+}
+.contrate{
+    background-color: var(--roxo-bg-color);
+}
+
+.imagem{
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    min-height: 80vh;
+    width: 50%;
+}
+.img-foto{
+    margin-top: -70px;
+    width: 350px;
+    height: 360px;
+    border-radius: 55% 45% 55% 45%;
+    overflow: hidden;
+    animation: imgFloat 7s ease-in-out infinite;
+}
+.img-foto img{
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+}
+
+@keyframes imgFloat{
+    50%{
+        transform: translateY(10px);
+        border-radius: 45% 55% 45% 55%;
+    }
+}
+
+/* @media (max-widht: 750px){}
+    diminuir padding left de main, configurar img com height widht e mexer no social media também
+*/
