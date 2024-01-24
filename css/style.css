@@ -80,7 +80,7 @@ button{
     cursor: pointer;
 }
 
-@media (max-width: 750px){
+@media (max-width: 896px){
     button:hover{
         background-color: white;
     }
@@ -89,20 +89,20 @@ button{
     }
     .hamburguer{
         display: block;
-        margin-top: 22px;
+        margin-top: 16px;
         border: none;
         z-index: 1;
+        font-size: 2em;
     }
     .nav-itens{
         position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
-        height: 100vw;
-        background: white;
+        height: 100vh;
+        background-color: white;
         clip-path: circle(100px at 90% -25%);
         transition: 1.5s ease-out;
-        
 
         flex-direction: column;
         justify-content: space-around;
@@ -133,10 +133,34 @@ button{
     } 
     #myNavMenu.active .hamburguer{
     position: fixed;
-    right: 61px;
+    right: 37px;
+    }
+
+    .inicial{
+    margin-top: 20em;
+    margin-left: -8em;
+    }
+    .nome{
+        margin: auto;
+    }
+    .dev{
+        width: 12em;
+    }
+    .img-foto{
+        margin-left: -23em;
+        margin-right: 2.4em;
+        top: 11em;
+    }
+    .down_cv1 a{
+        font-size: 1em;
+        padding: 11px 6px;
+        border-radius: 12px;
+    }
+    .texto{
+        width: 24em;
+        padding-left: -12px;
     }
 }
-
 main{
     padding-top: 13em;
     margin-left: 9em;
@@ -178,6 +202,7 @@ main button{
 }
 .contrate{
     background-color: var(--roxo-bg-color);
+    margin: 0px 20px 0px 0px;
 }
 
 .imagem{
