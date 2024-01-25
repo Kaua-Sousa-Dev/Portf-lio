@@ -80,7 +80,10 @@ button{
     cursor: pointer;
 }
 
-@media (max-width: 896px){
+@media (max-width: 900px){
+    nav{
+        box-shadow: 0 0 5px;
+    }
     button:hover{
         background-color: white;
     }
@@ -160,9 +163,20 @@ button{
         width: 24em;
         padding-left: -12px;
     }
+    .social{
+        margin-left: 46px;
+    }
+
+    .rolagem{
+        display: flex;
+    }
+    .rolagem .rolagem-btn{
+        margin-top: 41em;
+        margin-left: -18em;
+    }
 }
 main{
-    padding-top: 13em;
+    padding-top: 11em;
     margin-left: 9em;
     display: flex;
 }
@@ -211,6 +225,7 @@ main button{
     align-content: center;
     min-height: 80vh;
     width: 50%;
+    z-index: -1;
 }
 .img-foto{
     margin-top: -70px;
@@ -233,6 +248,17 @@ main button{
     }
 }
 
-/* @media (max-widht: 750px){}
-    diminuir padding left de main, configurar img com height widht e mexer no social media também
-*/
+.rolagem-btn{
+    margin-left: -35em;
+    margin-top: 26em;
+    display: flex;
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 2px 5px 0px;  
+}
+.rolagem i{
+    font-size: 21px;
+}
