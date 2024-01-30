@@ -23,6 +23,7 @@ html{
     font-family: 'Poppins', sans-serif;
 }
 
+/* --- NAVBAR -- */
 nav{
     display: flex; 
     justify-content: space-between;
@@ -79,6 +80,8 @@ button{
     background: none;
     cursor: pointer;
 }
+
+/* --- RESPONSIVE MOBILE -- */
 
 @media (max-width: 900px){
     nav{
@@ -175,6 +178,8 @@ button{
         margin-left: -18em;
     }
 }
+
+/* --- MAIN ---*/
 main{
     padding-top: 11em;
     margin-left: 9em;
@@ -219,6 +224,7 @@ main button{
     margin: 0px 20px 0px 0px;
 }
 
+/* --- MAIN IMG --- */
 .imagem{
     display: flex;
     justify-content: right;
@@ -248,6 +254,7 @@ main button{
     }
 }
 
+/* --- SCROLL --- */
 .rolagem-btn{
     margin-left: -35em;
     margin-top: 26em;
@@ -257,8 +264,77 @@ main button{
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    box-shadow: 0px 2px 5px 0px;  
+    box-shadow: 0px 2px 5px -2px;  
 }
 .rolagem i{
     font-size: 21px;
 }
+
+/* --- ABOUT --- */
+.about{
+    display: flex;
+    margin-left: -32em;
+    margin-top: 31em;
+}
+.about > .context{
+    margin-top: 4.5em;
+    margin-left: -33em;
+    width: 440px;
+    height: 190px;
+    box-shadow: 1px 8px 12px -2px;
+    border-radius: 20px;
+
+    text-align: center;
+    padding-block: 30px 70px;
+    padding-inline: 12px;
+}
+
+#btn-about{
+    background-color: var(--roxo-bg-color);
+}
+
+.about > .ling{
+    margin-top: 5em;
+    margin-left: 3em;
+    width: 200px;
+}
+
+/* --- SKILLS --- */
+.skills-box, .skills-box_2, .skills-box_3{
+    margin: 10px;
+}
+.skills-box_2{
+    position: relative;
+    bottom: 133px;
+    left: 220px;
+    z-index: -1;
+}
+.skills-box_3{
+    position: relative;
+    bottom: 265px;
+    left: 420px;
+    z-index: -1;
+}
+
+.skills-header{
+    margin-bottom: 30px;
+}
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.skills-list span{
+    font-size: 14px;
+    background: var(--roxo-bg-color);
+    color: white;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+/* --- Projects --- */
+.projects{
+    margin-left: -16em;
+    margin-top: 56em;
+}
+
