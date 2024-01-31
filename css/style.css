@@ -32,6 +32,7 @@ nav{
     height: 90px;
     line-height: 90px;
     padding-inline: 9vw;
+    box-shadow: 0px .1px 0px 0px;
 }
 .nav-itens{
     list-style-type: none;
@@ -181,7 +182,7 @@ button{
 
 /* --- MAIN ---*/
 main{
-    padding-top: 11em;
+    padding-top: 14em;
     margin-left: 9em;
     display: flex;
 }
@@ -230,20 +231,20 @@ main button{
     justify-content: right;
     align-content: center;
     min-height: 80vh;
-    width: 50%;
+    width: 60%;
     z-index: -1;
 }
 .img-foto{
-    margin-top: -70px;
-    width: 350px;
-    height: 360px;
+    margin-top: -45px;
+    width: 300px;
+    height: 310px;
     border-radius: 55% 45% 55% 45%;
     overflow: hidden;
     animation: imgFloat 7s ease-in-out infinite;
 }
 .img-foto img{
-    width: 380px;
-    height: 380px;
+    width: 310px;
+    height: 340px;
     object-fit: cover;
 }
 
@@ -256,8 +257,8 @@ main button{
 
 /* --- SCROLL --- */
 .rolagem-btn{
-    margin-left: -35em;
-    margin-top: 26em;
+    margin-left: -42em;
+    margin-top: 23em;
     display: flex;
     width: 150px;
     height: 40px;
@@ -273,15 +274,15 @@ main button{
 /* --- ABOUT --- */
 .about{
     display: flex;
-    margin-left: -32em;
-    margin-top: 31em;
+    margin-left: -39em;
+    margin-top: 29em;
 }
 .about > .context{
     margin-top: 4.5em;
     margin-left: -33em;
     width: 440px;
     height: 190px;
-    box-shadow: 1px 8px 12px -2px;
+    box-shadow: .5px .5px 9px 0px;
     border-radius: 20px;
 
     text-align: center;
@@ -295,7 +296,7 @@ main button{
 
 .about > .ling{
     margin-top: 5em;
-    margin-left: 3em;
+    margin-left: 1em;
     width: 200px;
 }
 
@@ -332,9 +333,84 @@ main button{
     border-radius: 5px;
 }
 
-/* --- Projects --- */
+/* --- Projects And Card Animation --- */
 .projects{
-    margin-left: -16em;
-    margin-top: 56em;
+    margin-left: -12em;
+    margin-top: 52em;
+}
+.projects-header{
+    margin-left: -20px;
+}
+.card{
+    display: flex;
+    margin-top: 6em;
+    margin-left: -24em;
+    max-width: 380px;
+    cursor: pointer;
+}
+.projects-card{
+    background: linear-gradient(var(--cinza-bg-color), var(--roxo-bg-color));
+    overflow: hidden;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.projects-card .img-card{
+    background-image: url('../img/img_project.jfif');
+    background-size: cover;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .9;
+    transition: all .5s;
+}
+.card:hover .img-card{
+    opacity: 1;
+    width: 460px;
+}
+.projects-card .img-card span{
+    font-size: 20px;
+    font-weight: 100;
+}
+.card .content-card{
+    padding: 0 20px;
+    overflow: hidden;
+    height: 0;
+    transition: all .5s;
+}
+.card:hover .content-card{
+    padding: 20px;
+    height: 300px;
+}
+.card .content-card .title{
+    font-size: 22px;
+}
+.card .content-card .desc-card{
+    font-size: 14px;
+    font-size: 400;
+    opacity: 0.7;
+    margin-bottom: 0;
+}
+.card .content-card .coding{
+    padding-top: 12px;
+    padding-left: 100px;
+}
+.card .arrow-card{
+    padding: 10px;
+    font-size: 28px;
 }
 
+#card_1{
+    margin-left: 8em;
+    margin-top: -9.5em;
+}
+#img-card_1{
+    background-image: url('../img/React-Coins.png');
+}
+#coding_1{
+    padding-left: 0;
+}
