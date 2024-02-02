@@ -496,16 +496,16 @@ footer {
     padding-left: 2px;
   }
   .skills-box {
-    width: 112px;
+    width: 122px;
     padding: 10px;
   }
   .skills-box_2 {
-    top: -191px;
+    top: -193px;
     left: 150px;
   }
   .skills-box_3{
     left: 317px;
-    top: -348px;
+    top: -351px;
   }
   .skills-box_2,
   .skills-box_3 {
@@ -526,7 +526,7 @@ footer {
 
 
   .contact{
-    margin-top: 120em;
+    margin-top: 123em;
     margin-left: -18em;
   }
   .col-info{
