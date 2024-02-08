@@ -32,7 +32,7 @@ sr.reveal(".title-card", {});
 sr.reveal(".dev-card", { delay: 100 });
 sr.reveal(".content-card", { delay: 200 });
 sr.reveal(".btn-content", { delay: 200 });
-sr.reveal(".social-media", { delay: 200 });
+sr.reveal("#social-media-js", { delay: 200 });
 sr.reveal(".sect-img", { delay: 300 });
 
 /* -- PROJECT BOX -- */

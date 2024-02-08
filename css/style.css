@@ -430,7 +430,7 @@ footer .footer-f a {
   }
   .sect-img {
     margin-top: -712px;
-    margin-left: 214px;
+    margin-left: 230px;
   }
   .sec-header {
     margin-top: 400px;
@@ -448,14 +448,15 @@ footer .footer-f a {
     margin-left: 339px;
   }
   .sect-about .content-about {
-    margin-left: -240px;
-    height: 306px;
+    margin-left: -220px;
+    height: 335px;
   }
   .content-about p {
-    height: 165px;
+    height: 200px;
   }
   .ling {
     display: block;
+    margin-left: 67px;
   }
 
   .sect-projects {
@@ -467,10 +468,10 @@ footer .footer-f a {
   .sect-projects .card-projects {
     width: 354px;
     height: 294px;
-    margin-left: -451px;
+    margin-left: -420px;
   }
   .sect-projects #card-projects-2 {
-    margin-left: -449px;
+    margin-left: -418px;
   }
   .sect-contact {
     display: block;
