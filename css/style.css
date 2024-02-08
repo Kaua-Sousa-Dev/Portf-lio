@@ -449,10 +449,10 @@ footer .footer-f a {
   }
   .sect-about .content-about {
     margin-left: -220px;
-    height: 335px;
+    height: 375px;
   }
   .content-about p {
-    height: 200px;
+    height: 220px;
   }
   .ling {
     display: block;
@@ -475,13 +475,13 @@ footer .footer-f a {
   }
   .sect-contact {
     display: block;
-    margin-left: 300px;
+    margin-left: 330px;
   }
   .sect-contact .title-contact p {
-    margin-left: 20px;
+    margin-left: -21px;
   }
   .sect-contact .title-contact span {
-    margin-left: -100px;
+    margin-left: -126px;
   }
   .sect-contact .contact-info {
     margin-left: 588px;
