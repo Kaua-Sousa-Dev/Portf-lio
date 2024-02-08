@@ -1,59 +1,45 @@
-/* --- Navbar Responsive Animation --- */
-const hamburguer = document.querySelector(".hamburguer");
-const nav = document.querySelector("#myNavMenu");
-
-hamburguer.addEventListener("click", () => nav.classList.toggle("active"));
-
 /* --- NavBar Function Scroll --- */
 window.onscroll = function () {
   headerShadow();
 };
 function headerShadow() {
-  const navHeader = document.getElementById("header");
+  const navHeader = document.getElementById("header-id");
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     navHeader.style.boxShadow = "0 1px 6px rgba(0, 0, 0, 0.1)";
     navHeader.style.height = "70px";
-    navHeader.style.lineHeight = "90px";
   } else {
     navHeader.style.boxShadow = "none";
-    navHeader.style.height = "90px";
-    navHeader.style.lineHeight = "90px";
   }
 }
 
-/* --- Typing Effect --- */
+/* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText", {
-  strings: ["Júnior", "FrontEnd", "BackEnd", "Designer 3D"],
+  strings: ["Junior", "FrontEnd", "BackEnd", "Designer 3D"],
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,
   backDelay: 2000,
 });
-
-/* --- Scroll Reveal --- */
+/* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
 const sr = ScrollReveal({
   origin: "top",
   distance: "80px",
   duration: 2000,
   reset: true,
 });
+/* -- HOME -- */
+sr.reveal(".title-card", {});
+sr.reveal(".dev-card", { delay: 100 });
+sr.reveal(".content-card", { delay: 200 });
+sr.reveal(".btn-content", { delay: 200 });
+sr.reveal(".social-media", { delay: 200 });
+sr.reveal(".sect-img", { delay: 300 });
 
-// Home
-sr.reveal("#nome-id", {});
-sr.reveal("#dev-id", { delay: 100 });
-sr.reveal("#texto-id", { delay: 200 });
-sr.reveal("#contrate-id", { delay: 200 });
-sr.reveal("#social-id", { delay: 200 });
-sr.reveal("#imagem-id", { delay: 300 });
-
-// PROJECT
-sr.reveal("#projects-box", { interval: 200 });
-sr.reveal("#projects-card_1", { interval: 200 });
-// HEADINGS
-sr.reveal(".projects-header", {});
-
-/* ----- ## -- SCROLL REVEAL LEFT_RIGHT -- ## ----- */
-
+/* -- PROJECT BOX -- */
+sr.reveal(".card-projects", { interval: 200 });
+/* -- HEADINGS -- */
+sr.reveal(".title-about", {});
+/* ----- ## -- SCROLL REVEAL LEFT_RIGHT ANIMATION -- ## ----- */
 /* -- ABOUT INFO & CONTACT INFO -- */
 const srLeft = ScrollReveal({
   origin: "left",
@@ -62,6 +48,17 @@ const srLeft = ScrollReveal({
   reset: true,
 });
 
-srLeft.reveal(".intro-about", { delay: 100 });
-srLeft.reveal(".context", { delay: 100 });
+srLeft.reveal(".content-about", { delay: 100 });
 srLeft.reveal(".contact-info", { delay: 100 });
+/* -- ABOUT SKILLS & FORM BOX -- */
+const srRight = ScrollReveal({
+  origin: "right",
+  distance: "80px",
+  duration: 2000,
+  reset: true,
+});
+
+srRight.reveal(".skills-box", { delay: 100 });
+srRight.reveal(".form-control", { delay: 100 });
+
+window.addEventListener("scroll", scrollActive);
