@@ -420,6 +420,7 @@ footer .footer-f a {
   nav {
     margin-top: -403px;
     margin-left: -140px;
+    width: 110%;
   }
   nav .menu,
   .CV {
